@@ -1,0 +1,11 @@
+@import "../../colours.scss";
+@import "../../flexbox.scss";
+
+
+.footer {
+  background: $black;
+  color: #fff;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+}

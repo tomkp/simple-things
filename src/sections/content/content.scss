@@ -1,0 +1,33 @@
+@import "../../colours.scss";
+@import "../../flexbox.scss";
+@import "../../mixins.scss";
+
+.no-content {
+  @extend .stripes;
+  @extend .flex;
+}
+
+.content {
+  @extend .column;
+}
+
+.content-pane {
+  @extend .flex;
+  @extend .scrollable;
+
+  background: $white;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.content-title {
+  @extend .truncate;
+  @extend .shadow;
+
+  z-index: 1;
+  font-weight: bold;
+  padding: 1rem;
+  background: $blue;
+  color: #fff;
+}
+

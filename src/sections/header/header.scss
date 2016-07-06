@@ -1,0 +1,23 @@
+@import "../../colours.scss";
+@import "../../flexbox.scss";
+
+.header {
+
+  @extend .row;
+
+  background: $black;
+  color: #fff;
+  height: 3rem;
+  line-height: 3rem;
+
+  .logo {
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    &:hover, &:active, &:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

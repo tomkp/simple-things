@@ -1,0 +1,36 @@
+@import "../../colours.scss";
+@import "../../flexbox.scss";
+@import "../../mixins.scss";
+
+.results {
+
+  @extend .scrollable;
+
+  width: 14rem;
+  background: $silver;
+  z-index: 2;
+}
+
+@media (max-width: 400px) {
+  .results {
+    width: 6rem;
+  }
+}
+
+.result {
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    border-bottom: 1px solid #aaa;
+    padding: 1rem;
+    cursor: pointer;
+
+    @extend .truncate;
+  }
+
+  .active {
+    background: $gray;
+  }
+}
